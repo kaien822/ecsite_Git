@@ -1,0 +1,40 @@
+<body>
+  <header>
+    <div class="headercontainer">
+      <div class="header-logo">ビール</div>
+      <div class="header-list">ログイン</div>
+    </div>
+  </header>
+
+  <div class="items">
+    
+    <div class="item">
+      <%= image_tag 'puremoru.jpg', class: 'item_img' %>
+      <div class="item_desc">
+        <h1>ザ・プレミアム・モルツ</h1>
+        <p class="tokutyou">プレモルならではの“おいしさ”と“泡品質”。その両方を高める「高分子タンパク」の制御に成功し、“華やかな香り”“深いコク”“心地良い後味”のバランスからなる余韻をより感じていただけるように仕上げました。</p>
+        <p><350mℓ></p>
+        <p class="nedan">234 円</p>
+        <div class="item_select">
+          <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
+          <input type="button" value="カートに追加">
+        </div>
+      </div>
+    </div>
+		
+    <div class="item">
+      <%= image_tag 'asahi.jpg', class: 'item_img' %>
+      <div class="item_desc">
+      <h1>アサヒ スーパードライ</h1>
+      <p class="tokutyou">洗練されたクリアな味、辛口。さらりとした口あたり、シャープなのどごし。キレ味さえる、いわば辛口ビールです。</p>
+      <p><350mℓ></p>
+      <p class="nedan">350 円</p>
+      <div class="item_select">
+        <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
+        <input type="button" value="カートに追加">
+      </div>
+    </div>
+  </div>
+
+	</div>
+</body>

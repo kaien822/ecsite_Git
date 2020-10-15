@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>タイトル</title>
+</head>
+<body>本文</body>
+</html>
+
+<body>
+  <header>
+    <div class="headercontainer">
+      <div class="header-logo">日本酒</div>
+      <div class="header-list">ログイン</div>
+    </div>
+  </header>
+
+  <div class="items">
+    
+    <div class="item">
+      <%= image_tag 'dassai.jpg', class: 'item_img' %>
+      <div class="item_desc">
+        <h1>獺祭 純米大吟醸 磨き三割九分 遠心分離</h1>
+        <p class="tokutyou">無加圧状態でもろみから酒を分離するため、 純米大吟醸もろみの本来持つ香りやふくらみ等の美点が崩れることなく表現されています。</p>
+        <p><1800mℓ></p>
+        <p class="nedan">7,931円</p>
+        <div class="item_select">
+          <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
+          <input type="button" value="カートに追加">
+        </div>
+      </div>
+    </div>
+		
+    <div class="item">
+      <%= image_tag 'syoutikubai.jpg', class: 'item_img' %>
+      <div class="item_desc">
+      <h1>上撰松竹梅</h1>
+      <p class="tokutyou">「蔵付き半兵衛酵母」で仕込んだ軽快でなめらかな味わいが特長です。</p>
+      <p><1800mℓ></p>
+      <p class="nedan">1,850円</p>
+      <div class="item_select">
+        <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
+        <input type="button" value="カートに追加">
+      </div>
+    </div>
+  </div>
+
+	</div>
+</body>
