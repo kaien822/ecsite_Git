@@ -1,12 +1,10 @@
 <body>
-  <header>
-    <div class="headercontainer">
-      <div class="header-logo">焼酎</div>
-      <div class="header-list">ログイン</div>
-    </div>
-  </header>
 
   <div class="items">
+
+    <div class="bunrui">
+      <p>焼酎</p>
+    </div>
     
     <div class="item">
       <%= image_tag 'umi.jpg', class: 'item_img' %>
@@ -15,10 +13,11 @@
         <p class="tokutyou">芋の香りには馴染めないが芋焼酎に挑戦してみたいという方にお勧めです。
         黄麹とベニオトメという品種のさつまいもを使用して、低温で丁寧に発酵させ、減圧蒸留することでクセの無い甘味と鮮烈な香り、そして爽快な喉ごしを実現しました。
         ロック、水割り、冷たいストレートがよく合う、女性に人気の焼酎です。
-
         </p>
-        <p><720mℓ></p>
-        <p class="nedan">1,430円</p>
+        <div class="nedan">
+          <p><720mℓ></p>
+          <p><span>1,430円</span></p>
+        </div>
         <div class="item_select">
           <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
           <input type="button" value="カートに追加">
@@ -29,16 +28,21 @@
     <div class="item">
       <%= image_tag 'kurokiri.jpg', class: 'item_img' %>
       <div class="item_desc">
-      <h1>黒霧島</h1>
-      <p class="tokutyou">黒麹の醸すうまさはトロッとしたあまみ、キリッとした後切れにあります。霧島酒造の永きに渡る伝統と卓越した技術からこの美味しさはつくられているのです。</p>
-      <p><1800mℓ></p>
-      <p class="nedan">1,724円</p>
-      <div class="item_select">
-        <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
-        <input type="button" value="カートに追加">
-      </div>
+        <h1>黒霧島</h1>
+        <p class="tokutyou">黒麹の醸すうまさはトロッとしたあまみ、キリッとした後切れにあります。霧島酒造の永きに渡る伝統と卓越した技術からこの美味しさはつくられているのです。</p>
+        <div class="nedan">
+          <p><1800mℓ></p>
+          <p><span>1,724円</span></p>
+        </div>
+        <div class="item_select">
+          <div class="botton"><input type="number" min="0" max="99" id="number"> 個</div>
+          <input type="button" value="カートに追加">
+        </div>
     </div>
+
+    <div class="kuuhaku">
+    </div>
+
   </div>
 
-	</div>
 </body>
