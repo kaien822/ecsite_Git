@@ -1,0 +1,49 @@
+<%= form_with(model: good, local: true) do |form| %>
+  <% if good.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(good.errors.count, "error") %> 商品を登録することが出来ません。:</h2>
+
+      <ul>
+      <% good.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+		<div class="label">
+			<%= form.label :商品ID %>
+		</div>
+		<div class="area">
+			<%= form.number_field :goods_id %>
+		</div>
+  </div>
+
+  <div class="field">
+		<div class="label">
+			<%= form.label :商品名 %>
+		</div>
+		<%= form.text_area :title , class:'text_area' %>
+  </div>
+
+  <div class="field">
+		<div class="label">
+			<%= form.label :画像URL %>
+		</div>
+    <%= form.text_area :image_url, class:'text_area' %>
+  </div>
+	
+	<div class="field">
+		<div class="label">
+			<%= form.label :価格 %>
+		</div>
+		<div class="area">
+		<%= form.number_field :price %>円
+		</div>
+  </div>
+
+  <div class="actions">
+    <%= form.submit('登録', :class=> 'fbtn') %>
+  </div>
+<% end %>

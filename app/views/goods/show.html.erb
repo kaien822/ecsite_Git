@@ -1,0 +1,35 @@
+<div class="items">
+  <h2>登録完了画面</h2>
+  <div class="show_body">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <strong>【商品ID】</strong>
+      <%= @good.goods_id %>
+    </p>
+
+    <p>
+      <strong>【商品名】</strong>
+      <%= @good.title %>
+    </p>
+
+    <p>
+      <strong>【画像URL】</strong>
+      <%= @good.image_url %>
+    </p>
+
+    <p>
+      <strong>【価格】</strong>
+      <%= @good.price %>
+    </p>
+  </div>
+
+  <div class="show_btn">
+    <%= link_to '編集', edit_good_path(@good), class:'nbtn' %>
+    <%= link_to '戻る', goods_path, class:'nbtn' %>
+  </div>
+
+  <div class="footer">
+      
+	</div>
+</div>

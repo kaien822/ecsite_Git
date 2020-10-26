@@ -1,0 +1,51 @@
+<body>
+  <div class="syouhintouroku_body">
+    <h2>ウォリアーズ商品登録画面</h2>
+
+    <p id="notice"><%= notice %></p>
+
+    <div class="syouhintouroku"><%= link_to '商品登録', new_good_path %></div>
+    
+    <table class="table1" cellspacing="0">
+      <thead>
+        <tr>
+          <th>商品画像</th>
+          <th>商品ID</th>
+          <th>商品名</th>
+          <th>画像</th>
+          <th>価格</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @goods.each do |good| %>
+          <tr>
+            <td text-align:center;><img height="80" src="<%=h good.image_url %>"/></td>
+            <td><%= good.goods_id %></td>
+            <td><%= good.title %></td>
+            <td><%= good.image_url %></td>
+            <td><%= good.price %>円</td>
+          </tr>
+          <% end %>
+      </tbody>
+    </table>
+
+    <table class="table2" cellspacing="0">
+      <tbody2>
+        <% @goods.each do |good| %>
+          <tr>
+            <td><%= link_to '詳細', good, class: 'btn' %></td>
+            <td><%= link_to '編集', edit_good_path(good), class: 'btn' %></td>
+            <td><%= link_to '削除', good, method: :delete, data: { confirm: '本当に削除してもよろしいですか？' }, class:'btn' %></td>
+          </tr>
+        <% end %>
+      </tbody2>
+    </table>
+
+    <div class="footer">
+      
+    </div>
+  </div>
+
+
+</body>  

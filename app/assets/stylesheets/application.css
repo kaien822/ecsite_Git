@@ -5,6 +5,11 @@ body {
   height: 100%;
 }
 
+
+a {
+  text-decoration: none;
+}
+
 a:link { color: white; }
 a:visited { color: white; }
 a:hover { color: white; }
@@ -171,7 +176,6 @@ span {
 .img {
   height: 220px;
   width: 250px;
-  background-color: coral;
   vertical-align: text-bottom;
 }
 
@@ -186,4 +190,247 @@ span {
 
 .kuuhaku {
   height: 20px;
+}
+
+/*ここから商品登録*/
+
+.syouhintouroku_body {
+  margin: auto;
+	width: 1000px;
+	height: 100%;
+	padding: 0;
+  background-color: white;
+}
+
+.syouhintouroku {
+  background-color: navy;
+  margin-left: 20px;
+  text-align: center;
+  width: 80px;
+  margin-bottom: 10px;
+  padding: 3px 3px 0 3px;
+}
+
+h2 {
+  background-color: navy;
+  margin-top: 10px;
+  color: white;
+  padding-left: 20px;
+}
+
+.table1 {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: solid 2px black;
+  float: left;
+}
+
+.table1 tr td {
+  padding: 8px 15px;
+  text-align: center;
+  border-collapse: collapse;
+  border: solid 1px black;
+}
+
+table tr th {
+  padding: 8px 15px;
+  text-align: center;
+  border-collapse: collapse;
+  border: solid 1px black;
+  background-color: wheat;
+}
+
+.table2 {
+  float: left;
+  margin-top: 43px;
+  margin-left: 20px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.table2 tr td {
+  font-size: 15px;
+  padding: 40px 0 41px 0;
+  text-align: center;
+  background-color: silver;
+  border-collapse: collapse;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.btn {
+  background-color: navy;
+  font-size: 10px;
+  padding: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.footer {
+  height: 40px;
+  width: 1000px;
+  background-color: navy;
+  margin-top: 50px;
+  clear: left;
+}
+
+.field {
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.modoru {
+  margin-left: 20px;
+}
+
+.nbtn {
+  margin-right: 5px;
+  background-color: slategray;
+  font-size: 15px;
+  padding: 1px 5px;
+}
+
+.label {
+  font-size: 15px;
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+.area {
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+.text_area {
+  line-height: 1;
+  vertical-align: bottom;
+  height: 15px;
+}
+
+.actions {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.show_body {
+  width: 400px;
+  border: solid 2px black;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.show_btn {
+  margin-left: 20px;
+}
+
+/*イモト*/
+.hako{
+  height: 40px;
+  width: 500px;
+  background-color:red
+
+}
+
+.box1 {
+  height: 20px;
+  width: 140px;
+  background-color: white;
+  float: left;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.hako1 {
+  height: 500px;
+  width: 600px;
+  float: left;
+  background-color:purple
+    
+}
+
+.box2{
+  height: 30px;
+  width: 400px;
+  background-color: white;
+  float: both;
+  border: solid 1px black;
+  text-align: left;
+}
+
+.box3{
+  height: 30px;
+  width: 400px;
+  background-color:white;
+  float: none;
+  border: solid 1px black;
+  text-align: left;
+}
+
+.box4{
+  height: 30px;
+  width: 400px;
+  background-color:white;
+  float: none;
+  border: solid 1px black;
+  text-align: left;
+}
+
+.box4{
+  height: 30px;
+  width: 400px;
+  background-color:white;
+  float: both;
+  border: solid 1px black;
+  text-align: left;
+}
+
+.box5{
+  height: 30px;
+  width: 400px;
+  background-color:white;
+  float: none;
+  border: solid 1px black;
+  text-align: left;
+}
+
+.box6{
+  height: 30px;
+  width: 80px;
+  background-color:yellow;
+  float: none;
+  border: solid 1px black;
+  text-align: center;
+  margin-left: 500px;
+}
+
+.syouhin{
+  height: 100px;
+  width: 400px;
+  background-color:white;
+  float: none;
+  border: solid 1px black;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.hako2 {
+  height: 500px;
+  width: 500px;
+  float: left;
+  margin-left: 30px;
+
+}   
+
+.注文確定{
+  height: 80px;
+  width: 300px;
+  background-color: silver;
+  float: left;
+  border: solid 1px black;
+  text-align: center;
+  margin-top: 30px;
+  margin-left: 100px  ;
+  
 }
